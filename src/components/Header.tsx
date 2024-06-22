@@ -12,8 +12,11 @@ function Header() {
   return (
     <header className="container mx-auto md:flex justify-between py-2 max-width">
       <div className="flex justify-between items-center py-2 md:py-10">
-        <NavLink to="/" className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-500">
-          DG
+        <NavLink
+          to="/"
+          className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-500"
+        >
+          Vitrine en Ligne
         </NavLink>
 
         <div onClick={toggleClass} className="cursor-pointer">
@@ -34,7 +37,11 @@ function Header() {
           </svg>
         </div>
       </div>
-      <nav className={` ${!isOpen ? "hidden" : null} text-center md:flex justify-between`}>
+      <nav
+        className={` ${
+          !isOpen ? "hidden" : null
+        } text-center md:flex justify-between`}
+      >
         <ul className="dark:text-light-content font-medium md:flex items-center md:space-x-5 md:mr-10">
           <li className="pb-1 md:pb-0">
             <NavLink to="/" onClick={toggleClass}>
@@ -51,11 +58,11 @@ function Header() {
               Technologies
             </NavLink>
           </li>
-          <li className="pb-1 md:pb-0">
+          {/* <li className="pb-1 md:pb-0">
             <NavLink to="/projects" onClick={toggleClass}>
               Projects
             </NavLink>
-          </li>
+          </li> */}
           <li>
             <NavLink to="/contact" onClick={toggleClass}>
               Contact

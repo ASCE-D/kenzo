@@ -37,6 +37,7 @@ import projectImage3 from "./assets/projects/mi.png";
 import projectImage4 from "./assets/projects/project4.jpg";
 import projectImage5 from "./assets/projects/project5.jpg";
 import projectImage6 from "./assets/projects/project6.jpg";
+import home from "./assets/home.webp"
 
 // Logos
 export const logos = {
@@ -46,10 +47,10 @@ export const logos = {
 
 // Enter your Personal Details here
 export const personalDetails = {
-  name: "Deepesh Genani",
-  tagline: "I build things for web",
-  img: profile,
-  about: `Full Stack Developer with a strong foundation in web development and a positive mindset. Passionate about creating impactful applications using MongoDB, ExpressJS, ReactJS, and NodeJS. Eager to learn and grow in a dynamic tech environment. Open to exciting opportunities in the field. `,
+  name: "Vitrine en Ligne",
+  tagline: "We build things for web",
+  img: home,
+  about: `Essentially, we are software development company with a pool of expert human and technical resources that work in bringing concepts into real-time applications. We want to bring the best of technology to achieve milestones for our clients. We are keen on building lasting business relations with technocrats who want to utilize the best of technology to enhance business, concept and the world in general. `,
 };
 
 // Enter your Social Media URLs here

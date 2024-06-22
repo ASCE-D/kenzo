@@ -8,6 +8,7 @@ import {
   FcOk,
   FcCollect,
   FcBinoculars,
+  FcApproval,
 } from "react-icons/fc";
 
 export default function PriceCard() {
@@ -36,6 +37,10 @@ export default function PriceCard() {
           <FcAddDatabase size={40} />
           <p className="text-sm">Easy to update content</p>
         </div>
+        <div className="mt-4 flex items-center space-x-2">
+          <FcApproval size={40} />
+          <p className="text-sm">On-page SEO</p>
+        </div>
         <Button className="mt-20 rounded-lg bg-[#E6700C] px-8 py-3 text-[15px] text-white">
           Get Started
         </Button>
@@ -63,6 +68,10 @@ export default function PriceCard() {
         <div className="mt-4 flex items-center space-x-2">
           <FcClearFilters size={38} />
           <p className="text-sm">High-quality visuals and animations</p>
+        </div>
+        <div className="mt-4 flex items-center space-x-2">
+          <FcApproval size={40} />
+          <p className="text-sm">On-page SEO</p>
         </div>
         <Button className="mt-20 rounded-lg bg-gray-400 px-8 py-3 text-[15px] text-white">
           Get Started
@@ -101,6 +110,10 @@ export default function PriceCard() {
         <div className="mt-4 flex items-center space-x-2">
           <FcPortraitMode size={30} />
           <p className="text-sm">Analytics and reporting</p>
+        </div>
+        <div className="mt-4 flex items-center space-x-2">
+          <FcApproval size={40} />
+          <p className="text-sm">On-page SEO</p>
         </div>
         <Button className="mt-7 rounded-lg bg-gray-800 px-8 py-3 text-[15px] text-white">
           Get Started

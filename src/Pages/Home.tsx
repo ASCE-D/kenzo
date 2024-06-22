@@ -104,7 +104,7 @@ function Home() {
             ref={myimageRef}
             className="w-full md:ml-auto rounded-full"
             src={img}
-            alt="Deepesh Genani"
+            alt="Vitrine en Ligne"
           />
         </div>
       </main>
