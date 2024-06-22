@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from "react";
+import  { useRef, useEffect } from "react";
 import gsap from "gsap";
 import { personalDetails } from "../Details";
 import PriceCard from "@/components/PriceCard";
@@ -10,13 +10,13 @@ interface PersonalDetails {
 }
 
 function Home() {
-  const { name, tagline, img } = personalDetails as PersonalDetails;
+  const { img } = personalDetails as PersonalDetails;
   const h11 = useRef<HTMLHeadingElement>(null);
   const h12 = useRef<HTMLHeadingElement>(null);
   const h13 = useRef<HTMLHeadingElement>(null);
   const myimageRef = useRef<HTMLImageElement>(null);
   const priceCardRef = useRef<HTMLImageElement>(null);
-  const [hideAnimatedElements, setHideAnimatedElements] = useState(true);
+  // const [hideAnimatedElements, setHideAnimatedElements] = useState(true);
 
   const slideUpAnimation = (element: HTMLElement | null, delay?: number) => {
     if (!element) return;

@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import { contactDetails } from "../Details";
 
 function Contact() {

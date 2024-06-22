@@ -1,6 +1,6 @@
-import React from "react";
-import Work from "../components/Work";
-import { personalDetails, eduDetails } from "../Details";
+// import React from "react";
+// import Work from "../components/Work";
+import { personalDetails } from "../Details";
 
 function About() {
   return (
