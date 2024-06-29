@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { useState } from "react";
 import {
   FcBusinessman,
   FcAddDatabase,
@@ -10,11 +11,25 @@ import {
   FcBinoculars,
   FcApproval,
 } from "react-icons/fc";
+import { Modal } from "./GetStartedFormModal";
 
 export default function PriceCard() {
+
+  //@ts-ignore
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleButtonClick = () => {
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+  };
+
   return (
     <div className="mt-20 flex gap-7">
-      <div className="flex h-[550px] w-[350px] max-w-[350px] flex-col rounded-lg bg-white px-[40px] py-[40px]">
+      <Modal isOpen={isModalOpen} onClose={handleCloseModal} />
+      <div className="flex h-[650px] w-[350px] max-w-[350px] flex-col rounded-lg bg-white px-[40px] py-[40px]">
         <span className="max-w-[170px] rounded-lg bg-orange-400 py-1 text-center text-sm text-white">
           Minimal Showcase Site
         </span>
@@ -22,7 +37,7 @@ export default function PriceCard() {
           1000-1500€
         </span>
         <h3 className="text-gray-400">Simple and Elegant</h3>
-        <div className="mt-5 h-[1.5px] w-auto rounded bg-orange-600"></div>
+        <div className="mt-5 h-[1.5px] w-full rounded bg-orange-600"></div>
         <div className="mt-7 flex items-center space-x-2">
           <FcBusinessman size={40} />
           <p className="text-sm">
@@ -38,7 +53,7 @@ export default function PriceCard() {
           <p className="text-sm">Easy to update content</p>
         </div>
         <div className="mt-4 flex items-center space-x-2">
-          <FcApproval size={40} />
+          <FcApproval size={38} />
           <p className="text-sm">On-page SEO</p>
         </div>
         <Button className="mt-20 rounded-lg bg-[#E6700C] px-8 py-3 text-[15px] text-white">
@@ -48,15 +63,15 @@ export default function PriceCard() {
           Ideal for small businesses
         </p>
       </div>
-      <div className="flex h-[550px] w-[350px] max-w-[350px] flex-col rounded-lg bg-white px-[40px] py-[40px]">
-        <span className="max-w-[150px] rounded-lg bg-gray-400 py-1 text-center text-sm text-black">
+      <div className="flex h-[650px] w-[350px] max-w-[350px] flex-col rounded-lg bg-white px-[40px] py-[40px]">
+        <span className="max-w-[150px] rounded-lg bg-gray-400 py-1 text-center text-sm text-white">
           Heavy Showcase Site
         </span>
         <span className="mt-5 rounded-lg text-3xl font-bold text-black">
           1600-2000€
         </span>
-        <h3 className="text-gray-400">Rich and Detailed</h3>
-        <div className="mt-4 h-[1.5px] w-auto rounded bg-gray-300"></div>
+        <h3 className="text-gray-400 mb-2">Rich and Detailed</h3>
+        <div className="mt-3 h-[2.5px] w-auto rounded bg-gray-300"></div>
         <div className="mt-7 flex items-center space-x-2">
           <FcServices size={40} />
           <p className="text-sm">Extensive customization options</p>
@@ -73,14 +88,17 @@ export default function PriceCard() {
           <FcApproval size={40} />
           <p className="text-sm">On-page SEO</p>
         </div>
-        <Button className="mt-20 rounded-lg bg-gray-400 px-8 py-3 text-[15px] text-white">
+        <Button
+          className="mt-20 rounded-lg bg-gray-400 px-8 py-3 text-[15px] text-white"
+          onClick={handleButtonClick}
+        >
           Get Started
         </Button>
         <p className="mt-3 text-center text-sm text-gray-400">
           Ideal for showcasing large portfolios
         </p>
       </div>
-      <div className="flex h-[550px] w-[350px] max-w-[350px] flex-col rounded-lg bg-white px-[40px] py-[40px]">
+      <div className="flex h-[650px] w-[350px] max-w-[350px] flex-col rounded-lg bg-white px-[40px] py-[40px]">
         <span className="flex max-w-[150px] items-center justify-center rounded-lg bg-gray-800 py-1 text-center text-sm text-white">
           E-commerce Site
           <p> 🌟</p>
@@ -115,7 +133,7 @@ export default function PriceCard() {
           <FcApproval size={40} />
           <p className="text-sm">On-page SEO</p>
         </div>
-        <Button className="mt-7 rounded-lg bg-gray-800 px-8 py-3 text-[15px] text-white">
+        <Button className="mt-10 rounded-lg bg-gray-800 px-8 py-3 text-[15px] text-white">
           Get Started
         </Button>
         <p className="mt-3 text-center text-sm text-gray-400">
